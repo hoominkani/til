@@ -59,3 +59,50 @@ address sizes	: 46 bits physical, 48 bits virtual #アドレス空間がどの�
 power management: #
 
 ```
+
+### meminfoを確認
+```bash
+cat /proc/meminfo
+MemTotal:        1019116 kB #メモリの総容量
+MemFree:          292892 kB #メモリの空き容量
+MemAvailable:     647568 kB #露葉可能なメモリ
+Buffers:          139632 kB #ファイルバッファに使用するメモリ量
+Cached:           330024 kB #キャッシュメモリとして使用されるメモリの量
+SwapCached:            0 kB #キャッシュメモリとして使用されるスワップ量
+Active:           475080 kB #使用中バッファメモリあるいはページキャッシュメモリの容量
+Inactive:          94488 kB #利用可能なバッファメモリあるいはページキャッシュメモリの容量
+Active(anon):     103148 kB
+Inactive(anon):    23656 kB
+Active(file):     371932 kB
+Inactive(file):    70832 kB
+Unevictable:       53000 kB
+Mlocked:           53000 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                72 kB
+Writeback:             0 kB
+AnonPages:        151868 kB
+Mapped:            81944 kB
+Shmem:             23688 kB
+Slab:              83080 kB
+SReclaimable:      49072 kB
+SUnreclaim:        34008 kB
+KernelStack:        3312 kB
+PageTables:         4160 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      509556 kB
+Committed_AS:     945396 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+AnonHugePages:      8192 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       12288 kB
+DirectMap2M:     1036288 kB
+```
