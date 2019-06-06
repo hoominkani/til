@@ -1,4 +1,8 @@
-# terraform実行環境のセットアップ
+# Terraform実行環境のセットアップ方法
+
+インフラリソースの管理に便利なterraform。
+今回はtfenvを使ってterraform自体のバージョン管理をしつつ、
+terraform applyで設定ファイルの適用をするまでのセットアップ方法をまとめました。
 
 ## tfenvのセットアップ
 
@@ -44,6 +48,11 @@ $ tfenv uninstall 0.11.9
 ### 現在インストールしているバージョンを表示
  - tfenv list
 ```bash
+tfenv list
+* 0.11.10 (set by /Users/XXXXXX/tfenv/version)
+  0.11.9
+  0.11.8
+  0.9.8
 ```
 
 ### インストール可能なバージョンを取得
@@ -62,3 +71,16 @@ $ tfenv use 0.11.10
 [INFO] Switching to v0.11.10
 [INFO] Switching completed
 ```
+
+### 実行計画の表示
+
+- terraform plan
+
+### 変更の適用
+
+- terraform apply
+
+## 終わりに
+
+いかがでしたか？
+こちらでセットアップしたTerraform実行環境を使って、ぜひInfrastructure as Codeを実践していってください！

@@ -1,4 +1,4 @@
-# awslogs-datetime-formatとawslogs-multiline-patternの使いどこと
+# awslogs-datetime-formatとawslogs-multiline-patternの使いどころ
 
 
 ## awslogs-datetime-formatの使いどころ
